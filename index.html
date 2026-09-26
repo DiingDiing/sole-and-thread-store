@@ -1,138 +1,36 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Diing — IT Professional and Web Developer specializing in HTML, CSS, JavaScript, PHP, Laravel and MySQL.">
-<meta property="og:title" content="Diing | IT Professional & Web Developer">
-<meta property="og:description" content="Professional web development portfolio featuring Laravel, PHP, JavaScript and MySQL.">
-<title>Diing Chol Diing | IT Professional & Web Developer</title>
-<link rel="stylesheet" href="style.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f7f5f0"><meta name="description" content="DIING LABEL — considered fashion, personal style and everyday expression.">
+<title>DIING LABEL — Wear your own way.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"><script src="js/script.js" defer></script>
 </head>
 <body>
-<header>
-<nav class="nav container">
-<a class="brand" href="#home">Diing<span>.</span></a>
-<button class="menu-toggle" aria-label="Open menu">☰</button>
-<div class="nav-links">
-<a href="#about">About</a><a href="#skills">Skills</a><a href="#services">Services</a><a href="#projects">Projects</a>
-<a href="#contact" class="nav-cta">Let's work together</a>
-</div>
-</nav>
+<div class="announcement">NEW SEASON, NEW ROTATION <b>✳</b> COMPLIMENTARY SHIPPING ON ORDERS OVER $100</div>
+<header class="header">
+<a class="logo" href="#">DIING <span>LABEL</span><i>.</i></a>
+<nav id="nav"><a class="active" href="#shop" data-filter="all">Shop all</a><a href="#shop" data-filter="shoes">Shoes</a><a href="#shop" data-filter="clothing">Clothing</a><a href="#story">Our approach</a></nav>
+<div class="actions"><button id="search-toggle" class="icon" aria-label="Search">⌕</button><button id="cart-open" class="bag">Bag <span id="cart-count">0</span></button><button id="menu-toggle" class="menu" aria-label="Toggle navigation">☰</button></div>
 </header>
-
 <main>
-<section id="home" class="hero">
-<div class="container hero-grid">
-<div>
-<p class="eyebrow">IT PROFESSIONAL · WEB DEVELOPER · LARAVEL</p>
-<h1>Building digital solutions that <span>work.</span></h1>
-<p class="hero-copy">I design and develop responsive websites and practical web applications using modern web technologies, with a focus on clean code, usability and reliable solutions.</p>
-<div class="actions"><a class="btn primary" href="#projects">View my work</a><a class="btn secondary" href="https://github.com/DiingDiing" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
-<div class="chips"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>PHP</span><span>Laravel</span><span>MySQL</span></div>
-</div>
-<aside class="terminal-card">
-<div class="status">● Available for web projects</div>
-<pre><code><b>$</b> whoami
-diing@developer:~$ web-developer
-
-<b>$</b> stack
-Laravel · PHP · JavaScript
-HTML · CSS · MySQL
-
-<b>$</b> focus
-<span>Build. Solve. Improve.</span></code></pre>
-</aside>
-</div>
+<section class="hero">
+<div class="hero-copy"><p class="eyebrow">— THE EVERYDAY EDIT / 2026</p><h1>Wear your<br><em>own way.</em></h1><p class="intro">An editorial selection of footwear and considered wardrobe pieces. Personal style, thoughtfully expressed.</p><div class="hero-links"><a class="button dark" href="#shop">Shop the collection <span>↗</span></a><a class="underlink" href="#story">Our point of view →</a></div><div class="note"><span>✳</span><p>Considered by design.<br><b>Wear your own way.</b></p></div></div>
+<div class="hero-art"><div class="hero-photo main-photo"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=85" alt="Red and white statement sneaker"></div><div class="hero-photo small-photo"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=700&q=85" alt="Minimal streetwear outfit"></div><div class="stamp">CURATED<br>FOR REAL<br><em>LIFE</em><b>✳</b></div><small class="caption">01 / EVERYDAY ICONS</small></div>
+<div class="hero-bottom"><span>DESIGNED FOR THE DAILY</span><span>CALM STYLE. REAL COMFORT.</span><span>EST. 2026</span></div>
 </section>
-
-<section id="about" class="section">
-<div class="container two-col">
-<div><p class="eyebrow">ABOUT ME</p><h2>Technology should solve a real problem.</h2></div>
-<div class="copy">
-<p>I'm <strong>Diing</strong>, an Information Technology student and aspiring software developer focused on building useful, maintainable digital solutions.</p>
-<p>My development work covers front-end interfaces and back-end applications, especially with PHP and Laravel. I also work with databases, APIs, Git/GitHub and core networking concepts.</p>
-<p>This portfolio is a living record of projects I build as I grow professionally. Each featured project demonstrates practical development skills rather than simply listing technologies.</p>
-</div>
-</div>
+<div class="ticker"><div>GOOD FIT, GOOD FEEL　✳　 YOUR DAILY UNIFORM　✳　 STYLE THAT STAYS　✳　 GOOD FIT, GOOD FEEL　✳　 YOUR DAILY UNIFORM　✳　</div></div>
+<section class="shop section" id="shop">
+<div class="section-title"><div><p class="eyebrow">THE COLLECTION / 01</p><h2>Find your <em>everyday.</em></h2></div><p>The pieces you reach for first.<br>And keep reaching for.</p></div>
+<div class="toolbar"><div class="filters"><button class="selected" data-category="all">All pieces <sup>08</sup></button><button data-category="shoes">Shoes <sup>04</sup></button><button data-category="clothing">Clothing <sup>04</sup></button></div><div class="tools"><label class="search" id="search-field">⌕ <input id="search" type="search" placeholder="Search pieces…" aria-label="Search products"></label><label class="sort">Sort: <select id="sort"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="name">Name A–Z</option></select></label></div></div>
+<div class="products" id="products"></div><div class="empty" id="empty" hidden><b>✳</b><h3>No pieces found.</h3><p>Try another search or browse the full collection.</p><button class="button dark" id="reset">Show all pieces</button></div>
+<div class="collection-foot"><span id="result-count">Showing 8 considered essentials</span><b>GOOD STYLE, NO COMPLICATIONS. ↗</b></div>
 </section>
-
-<section id="skills" class="section muted">
-<div class="container">
-<p class="eyebrow">TECHNICAL SKILLS</p><h2>Tools I use to build.</h2>
-<div class="grid skills">
-<article><b>HTML5</b><span>Semantic, accessible page structure</span></article>
-<article><b>CSS3</b><span>Responsive layouts and modern UI</span></article>
-<article><b>JavaScript</b><span>Interactive browser experiences</span></article>
-<article><b>PHP</b><span>Server-side application development</span></article>
-<article><b>Laravel</b><span>MVC, Eloquent, authentication and APIs</span></article>
-<article><b>MySQL</b><span>Relational data and application storage</span></article>
-<article><b>Git & GitHub</b><span>Version control and collaboration</span></article>
-<article><b>Networking</b><span>Core networking and security concepts</span></article>
-</div>
-</div>
-</section>
-
-<section id="services" class="section">
-<div class="container">
-<p class="eyebrow">SERVICES</p><h2>What I can build for you.</h2>
-<div class="grid services">
-<article><small>01</small><h3>Business Websites</h3><p>Professional responsive websites for businesses, organizations and personal brands.</p></article>
-<article><small>02</small><h3>Web Applications</h3><p>Database-driven systems for users, products, records, workflows and operations.</p></article>
-<article><small>03</small><h3>Laravel Development</h3><p>PHP/Laravel applications using MVC architecture, Eloquent, authentication and REST APIs.</p></article>
-<article><small>04</small><h3>Website Improvements</h3><p>Responsive redesigns, UI improvements, bug fixes and practical feature additions.</p></article>
-</div>
-</div>
-</section>
-
-<section id="projects" class="section muted">
-<div class="container">
-<div class="heading"><div><p class="eyebrow">FEATURED WORK</p><h2>My Projects</h2></div><a href="https://github.com/DiingDiing" target="_blank" rel="noopener noreferrer">View GitHub ↗</a></div>
-
-<article class="featured">
-<div class="number">01</div>
-<div>
-<small class="live">IN DEVELOPMENT</small>
-<h3>Laravel Inventory Management System</h3>
-<p>A practical inventory platform for products, categories, stock movements, search and low-stock visibility from a centralized dashboard.</p>
-<div class="chips"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>Blade</span><span>Eloquent</span><span>REST API</span></div>
-<div class="actions"><a class="btn primary disabled" href="#projects" aria-disabled="true">Live demo — coming soon</a><a class="btn secondary" href="https://github.com/DiingDiing" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
-</div>
-</article>
-
-<article class="featured">
-<div class="number">02</div>
-<div>
-<small class="live">FRONT-END DEMO · LIVE</small>
-<h3>DIING LABEL — Fashion Store</h3>
-<p>A luxury-editorial fashion storefront with considered typography, responsive layouts, product categories, search, sorting, favourites and an interactive shopping bag with quantity controls and subtotal calculation. Tagline: “Wear your own way.”</p>
-<div class="chips"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive UI</span></div>
-<div class="actions"><a class="btn primary" href="https://diingdiing.github.io/sole-and-thread-store/" target="_blank" rel="noopener noreferrer">View live website ↗</a><a class="btn secondary" href="https://github.com/DiingDiing/sole-and-thread-store" target="_blank" rel="noopener noreferrer">View source code ↗</a></div>
-</div>
-</article>
-
-<div class="future"><strong>More projects will be added as they are completed.</strong><br>Planned examples include booking systems and other database-driven applications.</div>
-</div>
-</section>
-
-<section class="section">
-<div class="container"><p class="eyebrow">HOW I WORK</p><h2>From idea to working software.</h2>
-<div class="grid steps">
-<div><b>01</b><h3>Understand</h3><p>Clarify the goal, users, features and constraints.</p></div>
-<div><b>02</b><h3>Build</h3><p>Develop a clean, responsive and maintainable solution.</p></div>
-<div><b>03</b><h3>Test</h3><p>Check functionality, usability and important edge cases.</p></div>
-<div><b>04</b><h3>Improve</h3><p>Refine the product based on feedback and real use.</p></div>
-</div></div>
-</section>
-
-<section id="contact" class="contact">
-<div class="container"><p class="eyebrow">LET'S CONNECT</p><h2>Have a website or software idea?</h2>
-<p>Tell me what you need built, improved or automated.</p>
-<div class="actions center"><a class="btn primary" href="mailto:chol.diing@students.jkuat.ac.ke">Email me</a><a class="btn secondary" href="https://github.com/DiingDiing" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
-</div>
-</section>
+<section class="editorial" id="story"><div class="editorial-photo"><img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=1200&q=85" alt="Clothing in a minimal wardrobe"></div><div class="editorial-copy"><p class="eyebrow">— OUR APPROACH</p><h2>Personal style.<br><em>On your terms.</em></h2><p>DIING LABEL is built around individual expression. Discover versatile silhouettes, considered details and pieces that move naturally with your own point of view.</p><a class="underlink" href="#shop">Explore the edit →</a><small>DL / NOTE 001</small></div></section>
+<section class="newsletter section"><span class="newsletter-star">✳</span><div><p class="eyebrow">THE GOOD STUFF, OCCASIONALLY</p><h2>Stay in the <em>loop.</em></h2><p>New arrivals, outfit notes and the occasional good thing.</p></div><form id="newsletter"><input type="email" id="email" placeholder="Your email address" aria-label="Your email address" required><button aria-label="Subscribe">↗</button><small id="newsletter-message"></small></form></section>
 </main>
-<footer><div class="container footer"><span>© <span id="year"></span> Diing.</span><span>IT Professional · Web Developer</span></div></footer>
-<script src="script.js"></script>
-</body>
-</html>
+<footer><div class="footer-top"><a class="logo" href="#">DIING <span>LABEL</span><i>.</i></a><p>Wear your own way.<br>Considered pieces. Personal style.</p><a href="#">BACK TO TOP ↑</a></div><div class="footer-bottom"><span>© <span id="year"></span> DIING LABEL — PORTFOLIO DEMO</span><span>DESIGNED & BUILT BY DIING CHOL DIING</span><span>INSTAGRAM ↗　 CONTACT ↗</span></div></footer>
+<div class="overlay" id="overlay" hidden></div><aside class="drawer" id="drawer" aria-hidden="true"><div class="drawer-head"><div><p class="eyebrow">YOUR SELECTION</p><h2>Your bag <small id="drawer-count">(0)</small></h2></div><button id="cart-close" aria-label="Close bag">×</button></div><div id="cart-items" class="cart-items"></div><div id="cart-empty" class="cart-empty"><b>✳</b><h3>Your bag is taking a breather.</h3><p>Find something that feels like you.</p><button class="button dark" id="continue">Explore the collection</button></div><div id="cart-summary" class="cart-summary" hidden><div><span>Subtotal</span><b id="subtotal">$0.00</b></div><p>Shipping and taxes calculated at checkout.</p><button class="button dark checkout" id="checkout">Continue to checkout <span>↗</span></button><small>Demo store — checkout is not connected.</small></div></aside><div class="toast" id="toast" role="status"></div>
+</body></html>
