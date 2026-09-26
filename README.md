@@ -1,6 +1,8 @@
-# SOLE & THREAD — Fashion Storefront
+# HOUSE OF DIING — Fashion Storefront
 
-A responsive shoe and clothing store concept built by **Diing Chol Diing** as a web-development portfolio project.
+**Tagline:** Wear your own way.
+
+A responsive fashion storefront concept with a luxury editorial visual direction, built by **Diing Chol Diing** as a web-development portfolio project.
 
 ## Features
 - Responsive desktop, tablet and mobile layouts
@@ -19,7 +21,7 @@ HTML5 · CSS3 · Vanilla JavaScript · Google Fonts · Unsplash product photogra
 Open `index.html` in a browser. No build tools are required. For a local server, use the VS Code Live Server extension.
 
 ## Publish on GitHub Pages
-1. Create a **public** repository such as `sole-and-thread-store`.
+1. Create a **public** repository such as `sole-and-thread-store` (the repository name can stay as-is).
 2. Upload the contents of this project folder to the repository root. Keep the `css` and `js` folders.
 3. Open **Settings → Pages**.
 4. Under **Build and deployment**, choose **Deploy from a branch**.
@@ -33,7 +35,7 @@ This is a front-end portfolio demo. Cart state is kept in the browser and is not
 
 GitHub Pages serves static files and does not execute PHP/Laravel. A production version can add Laravel, MySQL, authentication, admin product management, stock tracking, orders and a payment provider.
 
-**Status:** Front-end demo complete; Laravel backend planned.
+**Status:** Front-end demo complete; Laravel backend planned. The public-facing brand is HOUSE OF DIING.
 
 Product images are served by Unsplash, so an internet connection is required to load them.
 
