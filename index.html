@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f7f5f0"><meta name="description" content="SOLE & THREAD — considered footwear and everyday essentials.">
+<title>SOLE & THREAD — Everyday, elevated.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"><script src="js/script.js" defer></script>
+</head>
+<body>
+<div class="announcement">NEW SEASON, NEW ROTATION <b>✳</b> COMPLIMENTARY SHIPPING ON ORDERS OVER $100</div>
+<header class="header">
+<a class="logo" href="#">SOLE<span>&</span>THREAD<i>.</i></a>
+<nav id="nav"><a class="active" href="#shop" data-filter="all">Shop all</a><a href="#shop" data-filter="shoes">Shoes</a><a href="#shop" data-filter="clothing">Clothing</a><a href="#story">Our approach</a></nav>
+<div class="actions"><button id="search-toggle" class="icon" aria-label="Search">⌕</button><button id="cart-open" class="bag">Bag <span id="cart-count">0</span></button><button id="menu-toggle" class="menu" aria-label="Toggle navigation">☰</button></div>
+</header>
+<main>
+<section class="hero">
+<div class="hero-copy"><p class="eyebrow">— THE EVERYDAY EDIT / 2026</p><h1>Good things<br>go <em>with</em> you.</h1><p class="intro">A considered collection of everyday footwear and easy layers. Made for wherever the day takes you.</p><div class="hero-links"><a class="button dark" href="#shop">Shop the collection <span>↗</span></a><a class="underlink" href="#story">Our point of view →</a></div><div class="note"><span>✳</span><p>Less, but better.<br><b>Wear it on repeat.</b></p></div></div>
+<div class="hero-art"><div class="hero-photo main-photo"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=85" alt="Red and white statement sneaker"></div><div class="hero-photo small-photo"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=700&q=85" alt="Minimal streetwear outfit"></div><div class="stamp">CURATED<br>FOR REAL<br><em>LIFE</em><b>✳</b></div><small class="caption">01 / EVERYDAY ICONS</small></div>
+<div class="hero-bottom"><span>DESIGNED FOR THE DAILY</span><span>CALM STYLE. REAL COMFORT.</span><span>EST. 2026</span></div>
+</section>
+<div class="ticker"><div>GOOD FIT, GOOD FEEL　✳　 YOUR DAILY UNIFORM　✳　 STYLE THAT STAYS　✳　 GOOD FIT, GOOD FEEL　✳　 YOUR DAILY UNIFORM　✳　</div></div>
+<section class="shop section" id="shop">
+<div class="section-title"><div><p class="eyebrow">THE COLLECTION / 01</p><h2>Find your <em>everyday.</em></h2></div><p>The pieces you reach for first.<br>And keep reaching for.</p></div>
+<div class="toolbar"><div class="filters"><button class="selected" data-category="all">All pieces <sup>08</sup></button><button data-category="shoes">Shoes <sup>04</sup></button><button data-category="clothing">Clothing <sup>04</sup></button></div><div class="tools"><label class="search" id="search-field">⌕ <input id="search" type="search" placeholder="Search pieces…" aria-label="Search products"></label><label class="sort">Sort: <select id="sort"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="name">Name A–Z</option></select></label></div></div>
+<div class="products" id="products"></div><div class="empty" id="empty" hidden><b>✳</b><h3>No pieces found.</h3><p>Try another search or browse the full collection.</p><button class="button dark" id="reset">Show all pieces</button></div>
+<div class="collection-foot"><span id="result-count">Showing 8 considered essentials</span><b>GOOD STYLE, NO COMPLICATIONS. ↗</b></div>
+</section>
+<section class="editorial" id="story"><div class="editorial-photo"><img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=1200&q=85" alt="Clothing in a minimal wardrobe"></div><div class="editorial-copy"><p class="eyebrow">— OUR APPROACH</p><h2>Fewer things.<br><em>More ways</em> to wear them.</h2><p>We believe your wardrobe should work as hard as you do. So we focus on versatile staples, thoughtful details and pieces that feel right from the first wear.</p><a class="underlink" href="#shop">Explore the edit →</a><small>S&T / NOTE 001</small></div></section>
+<section class="newsletter section"><span class="newsletter-star">✳</span><div><p class="eyebrow">THE GOOD STUFF, OCCASIONALLY</p><h2>Stay in the <em>loop.</em></h2><p>New arrivals, outfit notes and the occasional good thing.</p></div><form id="newsletter"><input type="email" id="email" placeholder="Your email address" aria-label="Your email address" required><button aria-label="Subscribe">↗</button><small id="newsletter-message"></small></form></section>
+</main>
+<footer><div class="footer-top"><a class="logo" href="#">SOLE<span>&</span>THREAD<i>.</i></a><p>Everyday, elevated.<br>Made for the life you live.</p><a href="#">BACK TO TOP ↑</a></div><div class="footer-bottom"><span>© <span id="year"></span> SOLE & THREAD — PORTFOLIO DEMO</span><span>DESIGNED & BUILT BY DIING CHOL DIING</span><span>INSTAGRAM ↗　 CONTACT ↗</span></div></footer>
+<div class="overlay" id="overlay" hidden></div><aside class="drawer" id="drawer" aria-hidden="true"><div class="drawer-head"><div><p class="eyebrow">YOUR SELECTION</p><h2>Your bag <small id="drawer-count">(0)</small></h2></div><button id="cart-close" aria-label="Close bag">×</button></div><div id="cart-items" class="cart-items"></div><div id="cart-empty" class="cart-empty"><b>✳</b><h3>Your bag is taking a breather.</h3><p>Find something that feels like you.</p><button class="button dark" id="continue">Explore the collection</button></div><div id="cart-summary" class="cart-summary" hidden><div><span>Subtotal</span><b id="subtotal">$0.00</b></div><p>Shipping and taxes calculated at checkout.</p><button class="button dark checkout" id="checkout">Continue to checkout <span>↗</span></button><small>Demo store — checkout is not connected.</small></div></aside><div class="toast" id="toast" role="status"></div>
+</body></html>
