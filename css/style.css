@@ -10,7 +10,7 @@ footer{background:var(--ink);color:var(--paper);padding:39px 8.2% 0}.footer-top{
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
 
 
-/* HOUSE OF DIING — luxury editorial art direction */
+/* DIING LABEL — luxury editorial art direction */
 :root{--paper:#f8f5ef;--ink:#201b1a;--muted:#79716b;--line:#ded6cc;--lime:#d9c5a0;--orange:#7a303b;--sans:"DM Sans",sans-serif;--display:"Manrope",sans-serif;--serif:"Playfair Display",Georgia,serif}
 .announcement{background:#201b1a;color:#f8f5ef;letter-spacing:.18em;font-size:8px}.announcement b{color:#d9c5a0}
 .header{background:#f8f5efed;border-bottom-color:#ded6cc}
