@@ -2,7 +2,7 @@
 
 **Tagline:** Wear your own way.
 
-A responsive fashion storefront concept with a luxury editorial visual direction, built by **Diing Chol Diing** as a web-development portfolio project.
+A responsive fashion storefront concept with a luxury editorial visual direction, which i built as a web-development demo project.
 
 ## Features
 - Responsive desktop, tablet and mobile layouts
